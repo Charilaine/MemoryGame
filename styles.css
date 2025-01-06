@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b3d9ff; 
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+}
+
+h1 {
+    color: #003d80; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: transparent;
+    margin: 20px 0;
+}
+
+.theme a {
+    color: white; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.menu-bar {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.menu-link {
+    display: block;
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.menu-link:nth-child(1) {
+    background: linear-gradient(45deg, #ff7eb3, #ff4d6d);
+}
+
+.menu-link:nth-child(2) {
+    background: linear-gradient(45deg, #fb931d, #ff8c00);
+}
+
+.menu-link:nth-child(3) {
+    background: linear-gradient(45deg, #6dff7e, #38d930);
+}
+
+.menu-link:hover {
+    transform: scale(1.1);
+    background-color: darkgray;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    width: 300px;   
+    height: 300px;  
+    object-fit: cover; 
+    border-radius: 10px;  
+    display: block;  
+    margin: 0 auto;  
+    transition: transform 0.3s ease; 
+}
+
+.images a img {
+    width: 300px;      
+    height: 300px;     
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.images a img:hover {
+    transform: scale(1.1); 
+}
+
+.level-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;  
+}
+
+.level {
+    width: 30%;  
+    text-align: center;
+}
+
+.theme {
+    font-size: 18px;  
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+/* Level-container styling */
+.level-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.level {
+    text-align: center;
+}
+
+.level .theme a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.level-container .level img.images {
+    width: 300px;   
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.level-container .level img.images:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #003d80; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    position: relative; 
+}
+
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    visibility: hidden; 
+    position: absolute; 
+    transition: visibility 0.2s ease; 
+}
+
+.card.flipped {
+    background-color: #fff; 
+    color: #003d80; 
+    transform: scale(1.1); 
+}
+
+.card.flipped img {
+    visibility: visible; 
+}
+
+.card.matched {
+    background-color: #4CAF50; 
+    color: white;
+    pointer-events: none; 
+    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3); 
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #003d80; 
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #003d80; 
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #003d80; 
+    color: white;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.images img {
+    width: 120px;   
+    height: 120px;  
+    object-fit: cover;
+}
+
+
